@@ -1,0 +1,35 @@
+/* Header.css */
+.header {
+    background-color: #555B6E;
+    color: #BEE3DB;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Centering the container horizontally */
+}
+
+.title {
+    margin: 0; /* Remove default margin */
+    font-family: 'Inconsolata', monospace;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    color: #BEE3DB;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+}
