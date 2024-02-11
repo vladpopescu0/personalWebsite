@@ -1,9 +1,12 @@
 /* Header.css */
-.header {
+.footer {
+    text-align: center;
     background-color: #555B6E;
     color: #BEE3DB;
     padding: 10px;
-    text-align: center;
+    bottom: 0;
+    margin-top: 50px;
+    clear:both;
 }
 
 .container {
@@ -14,9 +17,10 @@
     margin: 0 auto; /* Centering the container horizontally */
 }
 
-.title {
+.footer-content {
     margin: 0; /* Remove default margin */
     font-family: 'Inconsolata', monospace;
+    font-size: 26px;
 }
 
 .nav-links {

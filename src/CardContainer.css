@@ -1,0 +1,10 @@
+/* BodyContainer.css */
+.body-container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    width: 60%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  

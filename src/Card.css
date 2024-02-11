@@ -1,15 +1,13 @@
 .card {
     padding: 8px;
-    margin-bottom: 16px;
     background-color: #BEE3DB;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-    width: 15%;
-    height: 15%;
-    min-width: 200px;
-    min-height: 200px;
     margin: 10px 10px 10px 10px;
+    max-width: 80%;
+    max-height: 80%;
     border-radius: 10px;
+    overflow: hidden;
   }
 
   .card:hover {
@@ -25,7 +23,7 @@
   
   .card-image {
     width: 100%;
-    height: auto;
+    height: 50%;
     border-radius: 4px;
     margin-bottom: 8px;
   }
@@ -33,5 +31,6 @@
   .card-content {
     font-size: 16px;
     color: #555B6E;
+    font-weight: 900;
   }
   

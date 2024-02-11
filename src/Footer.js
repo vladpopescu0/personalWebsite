@@ -1,13 +1,9 @@
-// Header.js
 import React from 'react';
-import './Header.css';
+import './Footer.css';
 
-function Header() {
+function Footer() {
     return (
-        <header className="header">
-            <div className="title">
-                <h1>vlad-popescu.com</h1>
-            </div>
+        <footer className="footer">
             <nav>
                 <ul className="nav-links">
                     <li><a href="/blog">Blog</a></li>
@@ -15,8 +11,11 @@ function Header() {
                     <li><a href="/about">About</a></li>
                 </ul>
             </nav>
-        </header>
+            <div className="footer-content">
+                <p>&copy; {new Date().getFullYear()} Vlad Popescu. All rights reserved.</p>
+            </div>
+        </footer>
     );
 }
 
-export default Header;
+export default Footer;
