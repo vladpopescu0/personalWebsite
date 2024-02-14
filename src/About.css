@@ -1,12 +1,102 @@
-.app {
-    background-color: #A4CAC5;
-    width: 100%;
-    height: 100%;
-    font-family: 'Inconsolata', monospace;
-  }
-  .app-content{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.bio {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 900;
+  display: flex;
+  padding: 10px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.skills {
+  background-color: #BEE3DB;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.skills h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #555B6E;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #555B6E;
+}
+
+.contact-info {
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact-info h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #555B6E;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #555B6E;
+}
+
+.contact-info a {
+  color: #555B6E;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.link-icon{
+  max-width: 20px;
+  max-height: 20px;
+  margin-right: 10px;
+}
+
+.info-row{
+  display: flex;
+  align-items: center;
+}
+
+.me-photo{
+  width: 250px;
+  height: 250px;
+  margin-right: 10px;
+}
