@@ -20,8 +20,10 @@
 }
 
 .profile-photo {
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  width: 20%;
+  height: 20%;
   border-radius: 50%;
   margin-right: 20px;
 }
@@ -95,8 +97,17 @@
   align-items: center;
 }
 
-.me-photo{
-  width: 250px;
-  height: 250px;
-  margin-right: 10px;
+.me-photo {
+  width: 60%;
+  height: 60%;
+  max-width: 400px; 
+  max-height: 400px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .me-photo {
+    display: none;
+  }
 }

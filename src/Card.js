@@ -33,7 +33,7 @@ const Card = (props) => {
 
   return (
     <div className="card">
-      {/* Render the image if an imageUrl is provided */}
+      {}
       {imageUrl && (
         <img
           src={imageUrl}
