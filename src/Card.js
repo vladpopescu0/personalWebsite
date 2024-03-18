@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import CustomModal from "./CustomModal";
 import "./Card.css";
 import calendarIcon from "./images/calendar.png";
 const Card = (props) => {
@@ -6,6 +7,7 @@ const Card = (props) => {
   const [isTextVisible, setIsTextVisible] = useState(true);
   const [fontSize, setFontSize] = useState(18);
   const [imageSize, setImageSize] = useState(200);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const checkWindowSize = () => {
     if (window.innerWidth < 600) {
@@ -20,6 +22,14 @@ const Card = (props) => {
       setIsTextVisible(true);
       setImageSize(200);
     }
+  };
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
   };
 
   useEffect(() => {
@@ -62,6 +72,10 @@ const Card = (props) => {
           <span className="date-text">{dateAdded}</span>
         </div>
       </div>
+      <button onClick={openModal} className="modal-button">
+        Read More
+      </button>
+      <CustomModal isOpen={modalOpen} onRequestClose={closeModal} />
     </div>
   );
 };
